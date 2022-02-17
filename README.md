@@ -53,9 +53,9 @@ HOSTNAME='localhost'
 
 A aplicação possui uma rota apenas ('/') para as tarefas, que funciona da seguinte forma:
 * `/` `GET` retorna todas as tarefas já cadastradas no banco de dados;
-* `/` [`POST`] armazena uma nova tarefa no banco de dados;
-* `/` [`PUT`] atualiza uma tarefa (necessita de todos os dados da tarefa para que possa ser atualizada);
-* `/` [`DELETE`] exclui uma tarefa do banco de dados;
+* `/` `POST` armazena uma nova tarefa no banco de dados;
+* `/` `PUT` atualiza uma tarefa (necessita de todos os dados da tarefa para que possa ser atualizada);
+* `/` `DELETE` exclui uma tarefa do banco de dados;
 
 ## Como foi desenvolvido:
 
