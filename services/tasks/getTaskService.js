@@ -1,10 +1,9 @@
 const { Task } = require('../../models');
 
 module.exports = async () => {
-  try {
-    const getAllTasks = await Task.findAll();
-    return { status: 200, message: getAllTasks };
-  } catch (error) {
-    return { status: 500, message: error };
-  }
-};
+  const getAllTasks = await Task.findAll();
+  let taskArray = [];
+  getAllTasks.forEach((task) => {
+    taskArray.push(task.dataValues);
+  });
+  return { status: 200, message: taskArray };};
