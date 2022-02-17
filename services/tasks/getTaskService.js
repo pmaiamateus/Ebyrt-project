@@ -5,6 +5,6 @@ module.exports = async () => {
     const getAllTasks = await Task.findAll();
     return { status: 201, message: getAllTasks };
   } catch (error) {
-    return { status: 400, message: error };
+    return { status: 500, message: error };
   }
 };
