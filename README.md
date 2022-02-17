@@ -75,9 +75,7 @@ O banco de dados foi conforme a imagem do destino:
 
 ### Cobertura de testes:
 
-A cobertura de testes pode ser vista tanto usando o comando npm run test no terminal na pasta da apliação quanto pela foto no destino:
-
-(./images/test coverage.png)
+A cobertura de testes pode ser vista usando o comando npm run test no terminal na pasta da apliação, que dura cerca de 1 minuto (tempo gasto na minha máquina)
 
 ### Próximos passos:
 
