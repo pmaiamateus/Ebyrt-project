@@ -37,4 +37,37 @@ Sendo assim, foram requisitos do projeto:
 ### Instalação
 
 1. abra um terminal na pasta que deseja clonar o repositório (pode ser feito usando o botão direito do mouse).
-2. 
+2. copie os comando:
+   . git clone https://github.com/pmaiamateus/Ebyrt-project.git
+   . cd Ebyrt-project
+   . npm install
+   . touch .env
+3. escreva as variaveis de ambiente da seguinte forma:
+MYSQL_USER=*seu usuário do MySql ou Root*
+MYSQL_PASSWORD=*Sua senha do MySql*
+HOSTNAME='localhost'
+(essas variáveis são para fazer um deploy futuro na aplicação)
+4. inicie a aplicação com npm start
+
+## Como utilizar:
+
+A aplicação possui uma rota apenas ('/') para as tarefas, que funciona da seguinte forma:
+* `/` [`GET`] retorna todas as tarefas já cadastradas no banco de dados;
+* `/` [`POST`] armazena uma nova tarefa no banco de dados;
+* `/` [`PUT`] atualiza uma tarefa (necessita de todos os dados da tarefa para que possa ser atualizada);
+* `/` [`DELETE`] exclui uma tarefa do banco de dados;
+
+## Como foi desenvolvido:
+
+Como ainda não me sentia totalmente seguro em relação a testes, fiz as rotas e o banco de dados para depois fazer os testes, lapidando e melhorando as funções assim que os testes me mostravam que faltava alguma coisa ou que algo poderia ser melhor escrito.
+
+No entanto, sinto que estou com um conhecimento melhor em relação a testes e que para projetos futuros já poderei começar a desenvolver na metodologia TDD, que consiste em fazer os testes primeiro e só depois desenvolver o código do projeto.
+
+### Tecnologias:
+
+Para este projeto, foram utilizados NodeJS com javascript e typescrypt e com o express para rodar a aplicação, e para os testes foram utilizados chai, frisby e a biblioteca shell.
+
+### Banco de dados:
+
+O banco de dados foi organizado da seguinte forma:
+
