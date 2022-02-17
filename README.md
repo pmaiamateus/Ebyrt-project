@@ -80,8 +80,11 @@ A cobertura de testes pode ser vista usando o comando npm run test no terminal n
 ### Próximos passos:
 
 . Consertar o banco de dados que está na linguagem errada;
+
 . lapidar os testes, procurando mais branches de atuação das funções
+
 . Programar o Front-end
+
 . Fazer deploy da aplicação
 
 ### Contatos:
