@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate",
-    "test": "jest",
+    "test-units": "jest test/unit/service --runInBand --forceExit",
+    "test": "jest --runInBand --forceExit",
     "start": "node index.js",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.js .",
     "coverage": "nyc --exclude dist/test --reporter=html npm run test"
