@@ -6,7 +6,7 @@ const { Task } = require('../models');
 
 const url = 'http://localhost:3001';
 
-describe('Tests endpoint /POST', () => {
+describe('Tests endpoint /GET', () => {
   beforeEach(() => {
     shell.exec('npx sequelize-cli db:drop');
     shell.exec('npx sequelize-cli db:create && npx sequelize-cli db:migrate');
