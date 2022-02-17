@@ -1,8 +1,7 @@
 const { expect } = require('chai');
 const shell = require('shelljs');
-const { Task } = require('../../../models');
 
-const { getTaskService } = require('../../../services/tasks');
+const { getTaskService, createTaskService } = require('../../../services/tasks');
 
 describe('Test createTask', () => {
   beforeEach(() => {
@@ -10,6 +9,10 @@ describe('Test createTask', () => {
     shell.exec('npx sequelize-cli db:create && npx sequelize-cli db:migrate');
   });
   it('Test if task is created correctly', async () => {
+    await createTaskService('create createTask route',
+    'start coding the post route of the task app', 'em andamento');
+    await createTaskService('create getTask route',
+    'start coding the get route of the task app', 'pendente');
     const getTaskResponse = await getTaskService();
     expect(getTaskResponse).to.be.a('object');
     expect(getTaskResponse.status).to.be.equal(200);
