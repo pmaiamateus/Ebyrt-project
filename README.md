@@ -71,4 +71,4 @@ Para este projeto, foram utilizados NodeJS com javascript e typescrypt e com o e
 
 O banco de dados foi organizado da seguinte forma:
 
-(./images/database schema.png)
+![cobertura de testes unitários](./images/database schema.png)
