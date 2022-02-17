@@ -6,4 +6,5 @@ module.exports = async () => {
   getAllTasks.forEach((task) => {
     taskArray.push(task.dataValues);
   });
-  return { status: 200, message: taskArray };};
+  return { status: 200, message: taskArray };
+};
