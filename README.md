@@ -69,6 +69,29 @@ Para este projeto, foram utilizados NodeJS com javascript e typescrypt e com o e
 
 ### Banco de dados:
 
-O banco de dados foi organizado da seguinte forma:
+O banco de dados foi conforme a imagem do destino:
 
-![cobertura de testes unitários](./images/database schema.png)
+(./images/database schema.png)
+
+### Cobertura de testes:
+
+A cobertura de testes pode ser vista tanto usando o comando npm run test no terminal na pasta da apliação quanto pela foto no destino:
+
+(./images/test coverage.png)
+
+### Próximos passos:
+
+. Consertar o banco de dados que está na linguagem errada;
+. lapidar os testes, procurando mais branches de atuação das funções
+. Programar o Front-end
+. Fazer deploy da aplicação
+
+### Contatos:
+
+https://www.linkedin.com/in/pmaiamateus/
+
+https://github.com/pmaiamateus
+
+email: pmaiamateus@gmail.com
+
+telefone: (11) 954563519
