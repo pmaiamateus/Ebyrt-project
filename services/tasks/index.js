@@ -1,3 +1,4 @@
 const createTaskService = require('./createTaskService');
+const getTaskService = require('./getTaskService');
 
-module.exports = { createTaskService };
+module.exports = { createTaskService, getTaskService };

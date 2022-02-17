@@ -1,5 +1,2 @@
 node_modules
 .env
-routes/taskRouter.js
-services/tasks/getTaskService.js
-controllers/tasks/getTaskController.js

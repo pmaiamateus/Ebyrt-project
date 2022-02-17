@@ -7,5 +7,6 @@ const { createTaskValidator } = require('../middlewares/reqValidator');
 const router = express.Router();
 
 router.post('/', createTaskValidator, createTaskController);
+router.get('/', getTaskController);
 
 module.exports = router;
