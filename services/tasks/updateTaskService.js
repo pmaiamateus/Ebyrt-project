@@ -24,4 +24,5 @@ module.exports = async (taskId, taskName, taskDescription, taskStatus) => {
       description: taskDescription,
       status: taskStatus,
       updated: 'updated' } };
-  }};
+  }
+};
