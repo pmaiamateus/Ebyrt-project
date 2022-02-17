@@ -7,10 +7,9 @@ const {
   deleteTaskController
 } = require('../controllers/tasks');
 
-const { createTaskValidator,
-  updateTaskValidator,
-  deleteTaskValidator
-} = require('../middlewares/reqValidator');
+const createTaskValidator = require('../middlewares/createTaskValidator');
+const updateTaskValidator = require('../middlewares/updateTaskValidator');
+const deleteTaskValidator = require('../middlewares/deleteTaskValidator');
 
 const router = express.Router();
 
