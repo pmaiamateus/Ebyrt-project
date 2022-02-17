@@ -11,7 +11,7 @@ module.exports = async (taskId, taskName, taskDescription, taskStatus) => {
       { where: { id: taskId } },
     );
     if (updatedTask[0] === 0) {
-      return { status: 201, message: {
+      return { status: 200, message: {
         id: taskId,
         name: taskName,
         description: taskDescription,
@@ -19,7 +19,7 @@ module.exports = async (taskId, taskName, taskDescription, taskStatus) => {
         updated: 'task sent was equal' } };
     }
     if (updatedTask[0] === 1) {
-      return { status: 201, message: {
+      return { status: 200, message: {
         id: taskId,
         name: taskName,
         description: taskDescription,

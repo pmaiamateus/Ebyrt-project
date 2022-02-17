@@ -33,4 +33,15 @@ const updateTaskValidator = (req, res, next) => {
   next();
 };
 
-module.exports = { createTaskValidator, updateTaskValidator };
+const deleteTaskSchema = Joi.object({
+  id: Joi.number().required(),
+});
+
+const deleteTaskValidator = (req, res, next) => {
+  const { id } = req.body;
+  const { error } = deleteTaskSchema.validate({ id });
+  if (error) return res.status(400).json({ message: error.details[0].message });
+  next();
+};
+
+module.exports = { createTaskValidator, updateTaskValidator, deleteTaskValidator };
