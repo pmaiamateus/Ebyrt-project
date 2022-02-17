@@ -1,3 +1,3 @@
-const createTaskController = require('./createTaskController')
+const createTaskController = require('./createTaskController');
 
-module.exports = { createTaskController }
+module.exports = { createTaskController };
